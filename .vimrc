@@ -200,3 +200,8 @@ function! XTermPasteBegin()
 endfunction
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+" nerdtree move to next/previous/new tab
+map  <C-l> :tabn<CR>
+map  <C-h> :tabp<CR>
+map  <C-n> :tabnew<CR>

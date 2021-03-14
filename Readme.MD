@@ -33,3 +33,19 @@ Use the natural Vim navigation keys **`hjkl`** to navigate the files.
 **`:%s/foo/bar/gcI`** change each 'foo' (case sensitive due to the `I` flag) to 'bar'; ask for confirmation.`:%s/foo\C/bar/gc` is the same because `\C` makes the search case sensitive.This may be wanted after using `:set ignorecase` to make searches case insensitive.
 
 The `g` flag means global – each occurrence in the line is changed, rather than just the first
+
+### Copy / Paste
+
+**`p`** Paste
+
+**`y`** Copy
+
+**`d`** Cut / Delete
+
+Use visual mode for copying > one word
+
+**`v}`** or  **`v{`** to copy to end/begiining of parapaph
+
+### Search
+
+**`*`** to find next occurrence to item under cursor
