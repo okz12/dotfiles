@@ -34,13 +34,13 @@ Use the natural Vim navigation keys **`hjkl`** to navigate the files.
 
 The `g` flag means global – each occurrence in the line is changed, rather than just the first
 
-### Copy / Paste
+### Copy / Paste / Delete
 
 **`p`** Paste
 
-**`y`** Copy
+**`y`** Copy or **`yy`** for entire line
 
-**`d`** Cut / Delete
+**`d`** Cut / Delete, **`dd`** for entire line, **`daw`** for current word
 
 Use visual mode for copying > one word
 
@@ -49,3 +49,11 @@ Use visual mode for copying > one word
 ### Search
 
 **`*`** to find next occurrence to item under cursor
+
+### Normal-mode to Insert
+
+**`i`** Insert at cursor
+
+**`o`** Insert on next line
+
+**`a`** Insert / append to end of line
