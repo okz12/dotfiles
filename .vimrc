@@ -8,8 +8,7 @@ endif
 
 call plug#begin()
 Plug 'tpope/vim-sensible'
-Plug 'itchyny/lightline.vim'
-Plug 'joshdick/onedark.vim'
+" Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-buftabline'
 Plug 'airblade/vim-gitgutter'
 Plug 'preservim/nerdtree'
@@ -19,11 +18,12 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'dense-analysis/ale'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/indentpython.vim'
-Plug 'lepture/vim-jinja'
+"Plug 'lepture/vim-jinja'
 Plug 'pangloss/vim-javascript'
 Plug 'alvan/vim-closetag'
 Plug 'maxmellon/vim-jsx-pretty'
-Plugin 'diepm/vim-rest-console'
+Plug 'diepm/vim-rest-console'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 filetype plugin indent on
@@ -96,13 +96,14 @@ endfunction
 
 " color scheme
 syntax on
-colorscheme onedark
+colorscheme gruvbox
+:set background=dark
 filetype on
 filetype plugin indent on
 
 " lightline
 set noshowmode
-let g:lightline = { 'colorscheme': 'onedark' }
+let g:lightline = { 'colorscheme': 'jellybeans' }
 
 " code folding
 set foldmethod=indent
