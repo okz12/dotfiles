@@ -8,7 +8,7 @@ endif
 
 call plug#begin()
 Plug 'tpope/vim-sensible'
-" Plug 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-buftabline'
 Plug 'airblade/vim-gitgutter'
 Plug 'preservim/nerdtree'
@@ -19,6 +19,9 @@ Plug 'dense-analysis/ale'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/indentpython.vim'
 "Plug 'lepture/vim-jinja'
+Plug 'valloric/youcompleteme'
+Plug 'heavnshell/vim-pydocstring'
+Plug 'tomtom/tcomment_vim'
 Plug 'pangloss/vim-javascript'
 Plug 'alvan/vim-closetag'
 Plug 'maxmellon/vim-jsx-pretty'
@@ -180,7 +183,12 @@ autocmd VimEnter * call StartUp()
 " ale
 map <C-j> <Plug>(ale_next_wrap)
 map <C-k> <Plug>(ale_previous_wrap)
-
+let g:ale_fixers = { '*': ['remove_trailing_lines', 'trim_whitespace'],
+\                    'python': ['isort', 'trim_whitespace', 'black']}
+let g:ale_echo_msg_format = '%linter% - %s'
+let g:ale_fix_on_save = 1
+let g:ale_linters_explicit = 1
+let g:ale_linters = { 'python': ['flake8', 'mypy', 'pylint']}
 " tags
 map <leader>t :TagbarToggle<CR>
 
