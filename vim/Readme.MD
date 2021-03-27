@@ -18,6 +18,8 @@ Use the natural Vim navigation keys **`hjkl`** to navigate the files.
 
 **`m`** launch NERDTree menu inside Vim.
 
+**`shift + i`** show hidden files.
+
 ### Replace
 
 **`:s/foo/bar/g`** find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.
@@ -47,6 +49,8 @@ Use visual mode for copying > one word
 **`v}`** or  **`v{`** to copy to end/begiining of parapaph
 
 ### Search
+
+**`/foo`** to find foo - **`n`** for next occurrence and **`N`** for previous occurrence.
 
 **`*`** to find next occurrence to item under cursor
 
