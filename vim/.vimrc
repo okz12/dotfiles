@@ -19,9 +19,8 @@ Plug 'dense-analysis/ale'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/indentpython.vim'
 "Plug 'lepture/vim-jinja'
-Plug 'valloric/youcompleteme'
-Plug 'heavnshell/vim-pydocstring'
-Plug 'tomtom/tcomment_vim'
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
+"Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'pangloss/vim-javascript'
 Plug 'alvan/vim-closetag'
 Plug 'maxmellon/vim-jsx-pretty'
@@ -215,3 +214,5 @@ inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 map  <C-l> :tabn<CR>
 map  <C-h> :tabp<CR>
 map  <C-n> :tabnew<CR>
+
+let g:pydocstring_formatter = 'google'

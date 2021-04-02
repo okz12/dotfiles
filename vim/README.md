@@ -63,3 +63,21 @@ Use visual mode for copying > one word
 **`o`** Insert on next line
 
 **`a`** Insert / append to end of line
+
+### Screen-splitting
+
+**`CTRL+w, v`** Opens a new vertical split
+
+**`CTRL+w, c`** Closes a window but keeps the buffer
+
+**`CTRL+w, o`** Closes other windows, keeps the active window only
+
+**`CTRL+w, right arrow`**: Moves the cursor to the window on the right
+
+**`CTRL+w, r`** Moves the current window to the right
+
+**`CTRL+w, =`** Makes all splits equal size
+
+### Exiting
+
+**`:x`** equivalent to `:wq` but only writes to disk if changes have been made. While the contents would be the same, `:wq` will change modification time whereas `:x` won't if changes have not been made. 
