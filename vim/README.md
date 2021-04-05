@@ -54,7 +54,9 @@ Use visual mode for copying > one word
 
 **`/foo`** to find foo - **`n`** for next occurrence and **`N`** for previous occurrence.
 
-**`*`** to find next occurrence to item under cursor
+**`*`** to find next occurrence of word under cursor
+
+**`#`** to find previous occurrence of word under cursor
 
 ### Normal-mode to Insert
 
@@ -81,3 +83,27 @@ Use visual mode for copying > one word
 ### Exiting
 
 **`:x`** equivalent to `:wq` but only writes to disk if changes have been made. While the contents would be the same, `:wq` will change modification time whereas `:x` won't if changes have not been made. 
+
+### Navigation
+
+**`g`** Go to beginning of file
+
+**`G`** Go to end of file
+
+**`:[num]`** Go to line number `[num]`
+
+**`{`** Go to start of paragraph
+
+**`}`** Go to end of paragraph
+
+### Natural Scrolling in iTerm2
+
+Mimic OS X's behavior of sending Cmd-left/right to the beginning/end of a line, add the following mappings in iTerm2:
+
+Cmd-left to escape-sequence `[1~`
+Cmd-right to escape-sequence `[4~`
+
+To mimic OS X's behavior of sending Option-left/right to the previous/next word, add the following mappings in iTerm2:
+
+Option-left to escape-sequence `[1;5D`
+Option-right to escape-sequence `[1;5C`
