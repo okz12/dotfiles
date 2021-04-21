@@ -216,3 +216,4 @@ map  <C-h> :tabp<CR>
 map  <C-n> :tabnew<CR>
 
 let g:pydocstring_formatter = 'google'
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
