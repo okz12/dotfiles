@@ -18,15 +18,16 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'dense-analysis/ale'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/indentpython.vim'
-"Plug 'lepture/vim-jinja'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
-"Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'pangloss/vim-javascript'
 Plug 'alvan/vim-closetag'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'diepm/vim-rest-console'
+Plug 'davidhalter/jedi-vim'
 Plug 'morhetz/gruvbox'
 call plug#end()
+
+set splitbelow
 
 filetype plugin indent on
 syntax on
