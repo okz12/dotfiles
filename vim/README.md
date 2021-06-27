@@ -38,6 +38,8 @@ Use the natural Vim navigation keys **`hjkl`** to navigate the files.
 
 The `g` flag means global – each occurrence in the line is changed, rather than just the first
 
+**`Ctrl+r`** shortcut in vimrc after selecting in visual mode
+
 ### Copy / Paste / Delete
 
 **`p`** Paste
@@ -160,4 +162,7 @@ git difftool --tool=vimdiff --no-prompt filea
 ### Wrap
 
 :set wrap nowrap (off)
+
 :set wrap linebreak (on)
+
+**`\w`** shortcut in vimrc
