@@ -50,6 +50,8 @@ Use visual mode for copying > one word
 
 **`v}`** or  **`v{`** to copy to end/begiining of parapaph
 
+**`"*p`** **`"*y`** accesses clipboard buffer to copy/paste from clipboard
+
 ### Search
 
 **`/foo`** to find foo - **`n`** for next occurrence and **`N`** for previous occurrence.
@@ -82,7 +84,7 @@ Use visual mode for copying > one word
 
 ### Exiting
 
-**`:x`** equivalent to `:wq` but only writes to disk if changes have been made. While the contents would be the same, `:wq` will change modification time whereas `:x` won't if changes have not been made. 
+**`:x`** equivalent to `:wq` but only writes to disk if changes have been made. While the contents would be the same, `:wq` will change modification time whereas `:x` won't if changes have not been made.
 
 ### Navigation
 
@@ -96,14 +98,66 @@ Use visual mode for copying > one word
 
 **`}`** Go to end of paragraph
 
-### Natural Scrolling in iTerm2
+## Natural Text Editing
 
-Mimic OS X's behavior of sending Cmd-left/right to the beginning/end of a line, add the following mappings in iTerm2:
+Select Natural Text Editing from iTerm2's profile in preferences
 
-Cmd-left to escape-sequence `[1~`
-Cmd-right to escape-sequence `[4~`
+Insert / Normal Mode moving:
+fn = CMD (moves entire sentence across)
+shift = option (moves word across)
 
-To mimic OS X's behavior of sending Option-left/right to the previous/next word, add the following mappings in iTerm2:
+Normal Mode editing:
 
-Option-left to escape-sequence `[1;5D`
-Option-right to escape-sequence `[1;5C`
+**`w`** end of word
+
+**`b`** beginning word
+
+**`$`** end of line
+
+**`^`** begining of line
+
+### Insert Mode Edit Commands
+
+```
+CTRL-O h  move cursor left
+CTRL-O l  move cursor right
+CTRL-O j  move cursor down
+CTRL-O k  move cursor up
+CTRL-W    delete word to the left of cursor
+CTRL-O D  delete everything to the right of cursor
+CTRL-U    delete everything to the left of cursor
+CTRL-H    backspace/delete
+CTRL-J    insert newline (easier than reaching for the return key)
+CTRL-T    indent current line
+CTRL-D    un-indent current line
+```
+
+### Jedi-Vim
+
+Add `set splitbelow` to .vimrc for showing quickfix list below
+
+**`ctrl+C`** completion
+**`\g`** goto assignment
+**`\d`** goto function
+**`\r`** renaming
+**`\n`** usages
+
+### Multi-line Edit
+
+**`>`** and **`<`** for indents (use visual mode to select multiple lines)
+
+Text Edit:
+1. **`Ctrl+v`** to enter visual block mode
+2. **`Shift+i`** to insert
+3. **`esc esc`** to make changes
+
+### Vim-Diff
+
+vimdiff filea fileb
+
+git difftool --tool=vimdiff --no-prompt filea
+
+### Wrap
+
+:set wrap nowrap (off)
+:set wrap linebreak (on)
