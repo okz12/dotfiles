@@ -8,6 +8,7 @@ endif
 
 call plug#begin()
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-commentary'
 Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-buftabline'
 Plug 'airblade/vim-gitgutter'

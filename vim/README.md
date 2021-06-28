@@ -68,7 +68,7 @@ Use visual mode for copying > one word
 
 **`o`** Insert on next line
 
-**`a`** Insert / append to end of line
+**`A`** Insert / append to end of line
 
 ### Screen-splitting
 
@@ -100,7 +100,7 @@ Use visual mode for copying > one word
 
 **`}`** Go to end of paragraph
 
-## Natural Text Editing
+#### Natural Text Editing
 
 Select Natural Text Editing from iTerm2's profile in preferences
 
@@ -166,3 +166,23 @@ git difftool --tool=vimdiff --no-prompt filea
 :set wrap linebreak (on)
 
 **`\w`** shortcut in vimrc
+
+### Random
+
+**`gc{motion}`** Comment
+
+Insert mode calculation <C-r>={exp}
+
+Upper / lowercause: **`gU{motion}`** or **`gu{motion}`**
+
+Normal mode replace char **`r`**
+
+Replace line with -: **`Vr-`**
+
+Move: Select and `:` followed by "m{address}" - **`:'<,'>m$`** where `:'<,'>` is visual selection
+
+Shell: `:shell` launches puts vim in background `:!{cmd}` for one-off commands. `read !{cmd}` to paste stdout to vim cursor.
+
+Split horizontal `:sp` or vertical `:vsp`
+
+Cycle between windows `C-w w` or `C-w {hjkl}`. Close/keep only `C-w c/o`.
